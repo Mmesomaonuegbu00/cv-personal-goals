@@ -90,10 +90,9 @@ nav {
 
 .hero-icons a {
   color: black;
-
 }
-.hero-icons a :hover{
-color: blue;
+.hero-icons a :hover {
+  color: blue;
 }
 .about-text {
   font-size: 3rem;
@@ -113,7 +112,7 @@ color: blue;
 .about {
   display: flex;
   padding-top: 6rem;
- justify-content: space-evenly;
+  justify-content: space-between;
 }
 .img2 {
   display: flex;
@@ -121,7 +120,7 @@ color: blue;
   margin-left: -3rem;
 }
 .img2 img {
-width: 60%;
+  width: 60%;
   height: 30rem;
 }
 .details {
@@ -169,8 +168,6 @@ width: 60%;
   border: 2px rgb(236, 231, 231) solid;
 }
 
-
-
 .project3 {
   padding: 1.3rem;
   margin: 0.3rem;
@@ -178,14 +175,13 @@ width: 60%;
 }
 
 .pro-button {
-
- border-radius: 10px;
+  border-radius: 10px;
   width: 10rem;
   padding: 0.7rem;
 }
 
 .pro-button a {
- color: black;
+  color: black;
 }
 .skills {
   margin-top: -5rem;
@@ -198,12 +194,18 @@ width: 60%;
 }
 
 .skills1 {
-  display: grid;
   padding-top: 2rem;
 }
 
-.skills1 progress {
-  width:20rem;
+.progress {
+  display: flex;
+  gap: 1rem;
+
+}
+.progress progress {
+  width: 15rem;
+  display: grid;
+ margin-top: 1rem;
 
 }
 .vertical-line {
@@ -276,7 +278,7 @@ width: 60%;
 
 .last {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   padding: 2rem;
   padding-left: 7rem;
   padding-right: 7rem;
@@ -298,6 +300,7 @@ justify-content: space-between;
   display: flex;
   align-items: center;
   gap: 2rem;
+  padding: 0.3rem;
 }
 .contact1 i {
   font-size: 3rem;
@@ -311,7 +314,7 @@ justify-content: space-between;
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 .contact2 i {
   font-size: 3rem;
@@ -325,6 +328,7 @@ justify-content: space-between;
   display: flex;
   align-items: center;
   gap: 2rem;
+  padding: 0.3rem;
 }
 .contact3 i {
   font-size: 3rem;
@@ -334,7 +338,6 @@ justify-content: space-between;
   border-radius: 10px;
 }
 form {
-
   padding: 5rem;
 }
 .control {
@@ -368,24 +371,33 @@ footer {
 footer p {
   color: white;
 }
+
 @media screen and (max-width: 768px) {
   nav {
     padding: 1rem;
+  }
+  .icon1 {
+    display: block;
+  }
+  .icon2 {
+    display: block;
   }
   .nav-ul {
     position: absolute;
     display: block;
     line-height: 3rem;
-    margin-left: -23rem;
-    background-color: var(---header-bg);
+    margin-left: -26rem;
+    margin-top: 13rem;
+    background-color: white;
     height: 20rem;
-    padding-left: 3rem;
+    padding: 4rem;
+ 
   }
 
   .slide1 {
     width: 95%;
     z-index: 999;
-    right: -1%;
+    right: -15%;
   }
   .hero-section {
     display: grid;
@@ -394,6 +406,11 @@ footer p {
   }
   .hero-text {
     font-size: 1rem;
+ 
+  }
+
+  .hero-text h2 {
+    padding-top: -12px;
   }
   .hero-image {
     max-width: fit-content;
@@ -411,21 +428,27 @@ footer p {
 
   .img2 {
     display: grid;
+    padding: 1rem;
+    margin-left: 1rem;
   }
   .skills {
     padding: 1rem;
-    margin-left: -6rem;
+    margin-left: -1rem;
     margin-top: 1px;
   }
 
   .skills1 progress {
-    width: 100%;
+    margin-left: 2rem;
   }
-
+.progress h2 {
+  font-size: 0.6rem;
+  line-height: 2rem;
+}
   .project-div {
     display: grid;
     padding: 1rem;
     justify-content: space-between;
+    margin-left: 3rem;
   }
 
   /* .project1 img {
@@ -463,5 +486,8 @@ footer p {
   }
   form textarea {
     width: 100%;
+  }
+  .nav-image {
+    display: none;
   }
 }
